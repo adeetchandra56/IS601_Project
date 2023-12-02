@@ -1,63 +1,81 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <html lang="en">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>SAV Shop</title>
-        <link rel="stylesheet" href="Style.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
-        rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAV Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
-    <body>
-        <div class="Row">
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                  <img class="SAVshop_logo" src="SAVshop_logo.jpg" alt="SAVshop logo">
-                  <a class="navbar-brand" href="#">Navbar</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="SAVshop_logo.jpg" alt="SAV Shop Logo" style="height: 40px; margin-right: 10px;">
+                SAV Shop
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
-                      </li>
-                      <li class="nav-item">
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#">Cart</a>
-                      </li>
-            </nav>
-
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="Summary">
-            <h1 class="summary_header">SAV Shop</h1>
-            <p class="summary_Text">We are SAV shop and we provide school supplies so that you can prepare
-                for school the right way with items that are necessary for success at school.
-            </p>
+    </nav>
+
+    <div class="container my-4">
+        <div class="row">
+            <div class="col text-center">
+                <h1>SAV Shop</h1>
+                <p>We are SAV shop and we provide school supplies so that you can prepare for school the right way with items that are necessary for success at school.</p>
+            </div>
         </div>
+    </div>
 
-        <div class="Shop_Items">
-            <img class="Pencil_image" src="pencil_img.jpg" alt="pencil image">
-
-            <button class="onclick">Add to cart</button>
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="pencil_img.jpg" class="card-img-top" alt="pencil image">
+                    <div class="card-body">
+                        <button class="btn btn-primary">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="Textbook_img.jpg" class="card-img-top" alt="Textbook image">
+                    <div class="card-body">
+                        <button class="btn btn-primary">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="essentials_goodybag.jpg" class="card-img-top" alt="Essentials Goodybag image">
+                    <div class="card-body">
+                        <button class="btn btn-primary">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="backpack.jpg" class="card-img-top" alt="Backpack image">
+                    <div class="card-body">
+                        <button class="btn btn-primary">Add to cart</button>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
 
-        <div>
-            <img class="Textbook" src="Textbook_img.jpg" alt="Textbook image">
-
-            <button class="onclick">Add to cart</button>
-        </div>
-
-        <div>
-            <img class="essentials_goodybag" src="essentials_goodybag.jpg" alt="Essentials Goodybag image">
-
-            <button class="onclick">Add to cart</button>
-        </div>
-
-        <div>
-            <img class="backpack" src="backpack.jpg" alt="Backpack image">
-
-            <button class="onclick">Add to cart</button>
-        </div>
-
-    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-9R5VvHqGmG6d3ce4qY9vV7o+8owWQd+0Yi5V5L5N5qJt9I2R4C7zmsczoK8ZC8Fn" crossorigin="anonymous"></script>
+</body>
 </html>
