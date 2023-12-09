@@ -1,0 +1,95 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAV Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="{% static 'SAVshop_logo.jpg' %}" alt="SAV Shop Logo" style="height: 40px; margin-right: 10px;">
+                SAV Shop
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'cart' %}">Cart</a>
+                    </li> 
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-4">
+        <div class="row">
+            <div class="col text-center">
+                <h1>SAV Shop</h1>
+                <p>We are SAV shop and we provide school supplies so that you can prepare for school the right way with items that are necessary for success at school.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="{% static 'pencil_img.jpg' %}" class="card-img-top" alt="pencil image">
+                    <div class="card-body">
+                        <button class="btn btn-primary">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="{% static 'Textbook_img.jpg' %}" class="card-img-top" alt="Textbook image">
+                    <div class="card-body">
+                        <button class="btn btn-primary">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="{% static 'essentials_goodybag.jpg' %}" class="card-img-top" alt="Essentials Goodybag image">
+                    <div class="card-body">
+                        <button class="btn btn-primary">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="{% static 'backpack.jpg' %}" class="card-img-top" alt="Backpack image">
+                    <div class="card-body">
+                        <button class="btn btn-primary">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-9R5VvHqGmG6d3ce4qY9vV7o+8owWQd+0Yi5V5L5N5qJt9I2R4C7zmsczoK8ZC8Fn" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-9R5VvHqGmG6d3ce4qY9vV7o+8owWQd+0Yi5V5L5N5qJt9I2R4C7zmsczoK8ZC8Fn"
+    crossorigin="anonymous"></script>
+
+<script>
+    // JavaScript function to handle adding items to the cart
+    function addToCart(itemName) {
+        // You can perform actions here, e.g., update a shopping cart object
+        alert('Added ' + itemName + ' to the cart!');
+    }
+
+</script>
+</body>
+</html>
